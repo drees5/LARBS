@@ -1,49 +1,52 @@
-# The Voidrice (Luke Smith <https://lukesmith.xyz>'s dotfiles)
+# Luke's GNU/Linux Rice
 
-These are the dotfiles deployed by [LARBS](https://larbs.xyz) and as seen on
-[my YouTube channel](https://youtube.com/c/lukesmithxyz).
+![pic](pic.jpg)
 
-- Very useful scripts are in `~/.local/bin/`
-- Settings for:
-	- vim/nvim (text editor)
-	- zsh (shell)
-	- lf (file manager)
-	- mpd/ncmpcpp (music)
-	- sxiv (image/gif viewer)
-	- mpv (video player)
-	- other stuff like xdg default programs, inputrc and more, etc.
-- I try to minimize what's directly in `~` so:
-	- All configs that can be in `~/.config/` are.
-	- Some environmental variables have been set in `~/.zprofile` to move configs into `~/.config/`
-- Bookmarks in text files used by various scripts (like `~/.local/bin/shortcuts`)
-	- File bookmarks in `~/.config/shell/bm-files`
-	- Directory bookmarks in `~/.config/shell/bm-dirs`
+There are my dotfiles! The name of the repo, "voidrice", came from the fact they were originally on my Void Linux machine, but these files are distro-independent. In fact, I now push changes from my X200 running Parabola or my X220 running Arch.
 
-## Usage
+## Programs whose configs can be found here
 
-These dotfiles are intended to go with numerous suckless programs I use:
++ i3 (i3-gaps)
++ urxvt (rxvt-unicode) (although these files us [my st build](https://github.com/lukesmithxyz/st) as the default terminal)
++ vim
++ bash
++ ranger
++ qutebrowser
++ mutt/msmtp/offlineimap (For offline syncing of email, with configs easy to change to a gmail account)
++ calcurse
++ ncmpcpp and mpd (my main music player)
++ Music on Console (moc and mocp as an alternative music player)
++ mpv
++ neofetch
++ compton (For transparency and to stop screen tearing)
++ And many little scripts I use
 
-- [dwm](https://github.com/lukesmithxyz/dwm) (window manager)
-- [dwmblocks](https://github.com/lukesmithxyz/dwmblocks) (statusbar)
-- [st](https://github.com/lukesmithxyz/st) (terminal emulator)
+## More documentation
 
-I also recommend trying out
-[mutt-wizard](https://github.com/lukesmithxyz/mutt-wizard), which additionally
-works with this setup. It gives you an easy-to-install terminal-based email
-client regardless of your email provider. It is integrated into these dotfiles
-as well.
+Check other config folders for more specific documentation. For example [config contains documentation on how to set up mutt with your email account.
 
-## Install these dotfiles and all dependencies
+[i3 guide and config](.config/i3/i3_guide.md)
 
-Use [LARBS](https://larbs.xyz) to autoinstall everything:
+[Email configuration](.config/mutt/email.md)
 
-```
-curl -LO larbs.xyz/larbs.sh
-```
+[ranger configuration](.config/ranger/luke_ranger_readme.md)
 
-or clone the repo files directly to your home directory and install the
-[dependencies](https://github.com/LukeSmithxyz/LARBS/blob/master/progs.csv).
+## Dynamic Configuration Files
 
-## Default Desktop Artwork
+Store your favorite or high-traffic folders in `~/.config/Scripts/folders` or your most important config files in `~/.config/Scripts/configs` with keyboard shortcuts. When you add things to theses files my vimrc will automatically run `~/.config/Scripts/shortcuts.sh` which will dynamically generate shortcuts for these in bash, ranger and qutebrowser!
 
-Thomas Thiemeyer's *The Road to Samarkand* ([fb](https://www.facebook.com/t.thiemeyer/), [insta](https://www.instagram.com/tthiemeyer/), [shop](https://www.redbubble.com/de/people/TThiemeyer/shop))
+Check out more info at the main repo for this: [shortcut-sync](https://github.com/lukesmithxyz/shortcut-sync). You will really want to take advantage of this for an extremely efficient setup!
+
+## Like my rice?
+
+Feel free to add other suggestions and I may implement them.
+
+I have a job, but every penny I get from followers or subscribers is more incentive to perfect what I'm doing. You can donate to me at [https://paypal.me/LukeMSmith](https://paypal.me/LukeMSmith). Donations are earmarked for whatever the donator wants, usually to go to funds for buying new equipment for the [YouTube channel](https://youtube.com/c/LukeSmithxyz).
+
+# Programs Used
+
++ i3-gaps, NetworkManager,compton
++ Terminal apps -- ranger, ncmpcpp, mpd, htop, weechat, neomutt, calcurse, newsbeuter, transmission-remote-cli, w3m, youtube-dl, ffmpeg, scrot
++ Background stuff -- mpd, transmission
++ Lightweight non-terminal apps -- mupdf, feh, rofi, network manager applet, arandr, mpv
++ Big business programs -- qutebrowser, GIMP, Blender
