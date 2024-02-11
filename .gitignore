@@ -1,0 +1,12 @@
+# Common dirs
+
+.cache
+.java
+.gsutil
+.gnupg
+.npm
+.mozilla/firefox
+.pki
+.rustup
+.ssh
+.local

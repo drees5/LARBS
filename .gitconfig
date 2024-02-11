@@ -1,0 +1,5 @@
+[user]
+	email = profdylanrees@gmail.com
+	name = Dylan Rees
+[core]
+	excludesFile = ~/.config/git/.gitignore
