@@ -1,5 +1,4 @@
-# Common dirs
-
+# Non-config files
 .cache
 .java
 .gsutil
@@ -10,3 +9,10 @@
 .rustup
 .ssh
 .local
+.config/Bitwarden
+.config/BraveSoftware
+.config/JetBrains
+.config/spotify
+Downloads
+GitRepos
+powerlevel10k
